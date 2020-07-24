@@ -1,6 +1,6 @@
 FROM node:10-alpine
-WORKDIR /app
-COPY package*.json ./app
+WORKDIR /docker
+COPY package*.json /docker
 RUN npm install
 COPY . /app
 CMD [ "npm", "start" ]
