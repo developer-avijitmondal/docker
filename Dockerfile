@@ -1,6 +1,6 @@
 FROM node:14.3.0-alpine 
 RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
-WORKDIR /
+WORKDIR /docker
 ADD package.json ./
 #COPY package*.json /docker
 RUN npm install
